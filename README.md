@@ -1,75 +1,52 @@
-# Nuxt Minimal Starter
+# Law Firm Company Profile – Frontend
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A premium, modern, and high-performance law firm website built with **Nuxt 4 + Tailwind CSS v4**. Designed to provide a professional digital presence for legal consultants with a focus on trust, clarity, and easy accessibility.
 
-## Setup
 
-Make sure to install dependencies:
+## Features
 
+- **Nuxt 4 Architecture**: Using the latest Nuxt features for optimal performance and SEO.
+- **Tailwind CSS v4 (Vite Engine)**: Lightning-fast styling with the latest CSS-first configuration.
+- **Official WhatsApp Integration**: Direct "Consultation" button with official branding for high conversion.
+- **Dynamic Legal Services**: Detailed pages for Corporate, Criminal, Civil, and Administrative law.
+- **Legal Insights (Blog)**: Dynamic article system to share legal education and case studies.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewports.
+
+## Installation & Setup
+
+#### 1. Clone and install
 ```bash
-# npm
+git clone https://github.com/ranandasatria/lawfirm-frontend.git
+cd lawfirm-frontend
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+#### 2. Run for Development
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
+#### 3. Build for Production
 ```bash
-# npm
+# Generate static or server-side build
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
+# Preview production build
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Application will be running on `http://localhost:3000`
+
+
+## Key Pages & Routes
+
+| Path | Description | Access |
+|------|-------------|--------|
+| `/` | Landing Page (Hero, Trust, Services Preview) | Public |
+| `/about` | Firm History, Vision & Mission | Public |
+| `/services` | Full List of Legal Services | Public |
+| `/services/[slug]` | Deep-dive into specific legal area | Public |
+| `/articles` | Legal education and insights list | Public |
+| `/contact` | Lead generation & WhatsApp direct link | Public |
+
+
