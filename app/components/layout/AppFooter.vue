@@ -57,7 +57,6 @@
 </template>
 
 <script setup>
-// Kita buat array yang sama dengan data di index layanan agar link-nya sinkron
 const footerServices = [
   { title: 'Civil & Criminal Law', slug: 'civil-criminal' },
   { title: 'Intellectual Property', slug: 'ip-law' },

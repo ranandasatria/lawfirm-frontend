@@ -100,7 +100,7 @@
 <script setup>
 import { reactive, ref } from 'vue'
 
-const method = ref('email') // default via email
+const method = ref('email')
 const form = reactive({
   name: '',
   message: ''
@@ -108,15 +108,13 @@ const form = reactive({
 
 const handleExternalContact = () => {
   const adminEmail = 'budhy.m@mpartnerslawfirm.com'
-  const adminPhone = '6282218887115' // format internasional tanpa '+'
+  const adminPhone = '6282218887115' 
 
   if (method.value === 'email') {
-    // Logika Kirim Email (Mailto)
     const subject = encodeURIComponent(`Konsultasi Hukum: ${form.name}`)
     const body = encodeURIComponent(`Halo Merdiansyah & Partners,\n\nSaya ${form.name} ingin berkonsultasi mengenai:\n\n${form.message}\n\nTerima kasih.`)
     window.location.href = `mailto:${adminEmail}?subject=${subject}&body=${body}`
   } else {
-    // Logika Kirim WhatsApp Direct
     const text = encodeURIComponent(`Halo Merdiansyah & Partners, saya *${form.name}*.\n\nSaya ingin berkonsultasi mengenai:\n\n${form.message}`)
     window.open(`https://wa.me/${adminPhone}?text=${text}`, '_blank')
   }
